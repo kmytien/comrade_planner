@@ -2,128 +2,59 @@
 <html lang = "en">
 
     <head>
+		<link rel="stylesheet" href="com_style.css">
 
-    <style>
-		@font-face { font-family: dream orphans; src: url('dream_orphans.TTF'); } 
+		<style>	
+			.container {
+				grid-template-columns: 285px 285px 285px;
+			}
+		</style>
 		
-		.mainheaders {
-			font-family: dream orphans;
-			text-align: center;
-		}
-
-		h4 {
-			font-family: dream orphans;
-			text-align: center;
-			font-size: 20px;
-			letter-spacing: 8px;
-			margin-top: -200px;
-			color: #545F66;
-		}
-		
-		body {
-			background-color: white;
-			color: #545F66;
-		}
-
-        nav {
-            float: left;
-            width: 14%;
-            height: 910px;
-            background: #545F66;
-            padding: 20px;
-			margin-top: -50px;
-        }
-
-        /* Style the list inside the menu */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            font-family: dream_orphans;
-			color:white;
-			text-align: center;
-			font-size: 19px;
-			letter-spacing: 3px;
-        }
-
-		mark {
-  			background-color: #D0F4EA;
-  			color: #545F66;
-		}
-		
-		.container {
-			background-color: #545F66;
-			margin-left:auto;
-			margin-right:auto;
-			width: 900px;
-			height: 750px;
-			display: grid;
-			grid-template-columns: 285px 285px 285px;
-			grid-row: 600px 600px;
-			grid-column-gap: 20px;
-			grid-row-gap: 20px;
-			border-style: solid;
-			border-width: 20px;
-			border-radius: 25px
-		}
-
-		.box {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border-radius: 25px
-		}
-
-		.button {
-			color: #ffffff !important;
-			font-family: dream orphans;
-			text-align: center;
-			font-size: 20px;
-			letter-spacing: 8px;
-			text-decoration: none;
-			background: #545F66;
-			padding: 20px;
-			display: inline-block;
-			transition: all 0.4s ease 0s;
-		}
-
-
-    </style>
-	
-	<title>Class Schedule</title>
+		<title>Class Schedule</title>
     </head>
 
     <nav>
         <ul>
-            <h3 class = "mainheaders" style = "font-size: 20px; letter-spacing: 10px;">NAVIGATION</h3>
-			<div><a class = "button" href="comrade_front.html" rel = "nofollow noopener"><b>Home</b></a></div> 
-			<div><a class = "button" href="today.html"  rel = "nofollow noopener"><b>Today</b></a></div>
-			<div><a class = "button" href="calendar.html" rel = "nofollow noopener"><b>Calender</b></a></div>
-			<div><a class = "button" href="lists.html" rel = "nofollow noopener"><b>Lists</b></a></div>
+            <h3 class = "mainheaders" style = "font-size: 30px; letter-spacing: 10px;">NAVIGATION</h3>
+			<div><a class = "navbutton" href="comrade_front.html" rel = "nofollow noopener"><b>Home</b></a></div> 
+			<div><a class = "navbutton" href="today.html"  rel = "nofollow noopener"><b>Today</b></a></div>
+			<div><a class = "navbutton" href="calendar.html" rel = "nofollow noopener"><b>Calendar</b></a></div>
+			<div><a class = "navbutton" href=# rel = "nofollow noopener" style = "background: #41494e"><b>Class<br>Schedule</b></a></div> 
+			<div><a class = "navbutton" href="lists.html" rel = "nofollow noopener"><b>Lists</b></a></div>
         </ul>
     </nav>
-  	<!-- /*comment*/ -->
+	
     <body>
+		<div style = "margin-left: 17%">
+
 		<h3 class = "mainheaders" style = "font-size: 50px; letter-spacing: 20px;">CLASS SCHEDULE</h3> 
 
 		<div class = "container">
 			<div class = "box" style = "background-color: #D0F4EA;">
-				<h4>Monday</h4>
+				<p class = "weekheaders">Monday</p>
 			</div>
+
 			<div class = "box" style = "background-color: #E8FCC2;">
-				<h4>Tuesday</h4>
+				<p class = "weekheaders">Tuesday</p>
 			</div>
+
 			<div class = "box" style = "background-color: #D0F4EA;">
-				<h4>Wednesday</h4>
+				<p class = "weekheaders">Wednesday</p>
 			</div>
+
 			<div class = "box" style = "background-color: #E8FCC2;">
-				<h4>Thursday</h4>
+				<p class = "weekheaders">Thursday</p>
 			</div>
+
 			<div class = "box" style = "background-color: #D0F4EA;">
-				<h4>Friday</h4>
+				<p class = "weekheaders">Friday</p>
 			</div>
+			
 			<div class = "box" style = "background-color: #E8FCC2;">
-				<h4>Weekend</h4>
+				<p class = "weekheaders">Saturday</p>
 			</div>
+		</div>
+		
 		</div>	
     </body>
   
